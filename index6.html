@@ -1,0 +1,55 @@
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+    
+    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    //Apresente a lista final de cada tipo de veículo.
+
+    //ENTRADA
+    const carro1 = prompt(`Qual carro você deseja adicionar?`);
+    const tipo1 = prompt(`Qual você é o tipo do carro?`).toLowerCase();
+    const carro2 = prompt(`Qual outro carro você deseja adicionar?`);
+    const tipo2 = prompt(`Qual você é o tipo do carro?`).toLowerCase();
+    const carro3 = prompt(`Qual o ultimo carro você deseja adicionar?`);
+    const tipo3 = prompt(`Qual você é o tipo do carro?`).toLowerCase();
+
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    if (tipo1 == "suv") {
+        carrosSUV.push(carro1);
+    }else if (tipo1 == "sedan") {
+        cassosSedan.push(carro1);
+    }else if (tipo1 == "hatch") {
+        carrosHatch.push(carro1);
+    }
+    if (tipo2 == "suv") {
+        carrosSUV.push(carro2);
+    }else if (tipo2 == "sedan") {
+        cassosSedan.push(carro2);
+    }else if (tipo2 == "hatch") {
+        carrosHatch.push(carro2);
+    }
+    if (tipo3 == "suv") {
+        carrosSUV.push(carro3);
+    }else if (tipo3 == "sedan") {
+        cassosSedan.push(carro3);
+    }else if (tipo3 == "hatch") {
+        carrosHatch.push(carro3);
+    }
+
+    document.write(`SUV: ${carrosSUV.join(", ")}<br>
+    Sedan: ${cassosSedan.join(", ")}<br>
+    Hatch: ${carrosHatch.join(", ")}`);
+
+     //PROCESSAMENTO
+
+
+    //SAÍDA
+
+</script>

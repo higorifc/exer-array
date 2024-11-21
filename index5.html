@@ -11,7 +11,8 @@
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     const carro = prompt('Informe carro você deseja adicionar a esta lista: Tiggo; Sportage; Tucson; EcoSport.');
-
+    const carros2 = carrosSUV.push(`${carro}`);
+    document.write(`A lista antiga é: <br> Tiggo <br> Sportage <br> Tucson <br> EcoSport <br> A lista nova é: <br> ${carrosSUV.join("<br>")}`);
     
 
     //PROCESSAMENTO
